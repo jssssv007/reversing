@@ -26,13 +26,13 @@ section .text
 		push print
 		call scanf
 
-		lea ebx,[ebp-0x8]
+		lea ebx,[ebp-0xc]
 		push ebx
 		push print
 		call scanf
 
 		mov eax,DWORD[ebp-0x4]
-		mov ebx,DWORD[ebp-0x8]
+		mov ebx,DWORD[ebp-0xc]
 		add eax,ebx
 		push eax
 		push sum
@@ -46,7 +46,7 @@ section .text
 		call printf
 
 		mov eax,DWORD[ebp-0x4]
-		mov ebx,DWORD[ebp-0x8]
+		mov ebx,DWORD[ebp-0xc]
 		imul eax,ebx
 		push eax
 		push product
@@ -54,7 +54,7 @@ section .text
 
 		xor edx,edx
 		mov eax,DWORD[ebp-0x4]
-		mov ebx,DWORD[ebp-0x8]
+		mov ebx,DWORD[ebp-0xc]
 		div ebx
 		push eax
 		push division
