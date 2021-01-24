@@ -59,3 +59,6 @@ section .text
 		push eax
 		push division
 		call printf
+		
+	leave
+	ret
