@@ -39,7 +39,7 @@ section .text
 		call printf
 
 		mov eax,DWORD[ebp-0x4]
-		mov ebx,DWORD[ebp-0x8]
+		mov ebx,DWORD[ebp-0xc]
 		sub eax,ebx
 		push eax
 		push subtract
