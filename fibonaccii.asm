@@ -2,8 +2,6 @@ BITS 32
 extern scanf
 extern printf
 section .data
-
-
 	print:db "%d",0
 	x:db"fibonacci value is %d",10,0
 section .txt
