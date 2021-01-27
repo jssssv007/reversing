@@ -20,7 +20,7 @@ main:
 
 	lea eax,[ebp-0x4]  
 	push eax
-	push spec
+	push print
 	call scanf
 
 	mov ecx,DWORD [ebp-0x4]
