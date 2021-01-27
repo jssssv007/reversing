@@ -43,18 +43,16 @@ solution:
 
 	push DWORD[ebp-0x4]
 	push a
-	call printf
 
-	jmp exit
+	mov esp,ebp
+	pop ebp
+
+	mov eax,1
+	call printf
+	leave
+	ret
 composite:
 	push DWORD[ebp-0x4]
 	push b
 	call printf
 
-
-exit:
-	mov esp,ebp
-	pop ebp
-
-	mov eax,1
-	int 80h
