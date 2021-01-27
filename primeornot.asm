@@ -5,7 +5,7 @@ extern printf
 
 section .data
 	
-	spec: db "%d",0
+	print: db "%d",0
 	a: db "%d is a prime number",10,0
 	b: db "%d is not a prime number",10,0
 
